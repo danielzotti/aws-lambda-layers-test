@@ -1,0 +1,21 @@
+service: layers
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: eu-west-3
+  stage: dev
+
+layers:
+  express-pg-moment:
+    path: express-pg-moment
+    name: express-pg-moment
+    description: Layer with ExpressJS, MomentJS, Serverless HTTP, PostgreSQL client
+
+resources:
+  Outputs:
+    ExpressPgMomentLayerExport:
+      Value:
+        Ref: ExpressPgMomentLambdaLayer
+      Export:
+        Name: ExpressPgMomentLambdaLayer

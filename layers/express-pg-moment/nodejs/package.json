@@ -1,0 +1,13 @@
+{
+  "name": "express-pg-moment",
+  "version": "1.0.0",
+  "description": "A lambda layer with Serverless HTTP, ExpressJS, pg (PostgreSQL) and MomentJS",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "pg": "^8.0.0",
+    "serverless-http": "^2.3.2",
+    "validator": "^13.0.0"
+  }
+}

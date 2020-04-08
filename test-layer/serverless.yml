@@ -1,0 +1,28 @@
+service: test-layer
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: eu-west-3
+  stage: ${opt:stage, 'dev'}
+
+functions:
+  hello:
+    handler: index.handler
+    layers:
+      #      - arn:aws:lambda:eu-west-3:660349859862:layer:express-pg-moment:1
+      - ${cf:layers-${self:provider.stage}.ExpressPgMomentLambdaLayer}
+    events:
+      - http:
+          path: /
+          method: GET
+          cors: true
+      #          private: true
+      - http:
+          path: /test
+          method: GET
+          cors: true
+
+plugins:
+  - serverless-plugin-typescript
+  - serverless-offline

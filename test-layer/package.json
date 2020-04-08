@@ -1,0 +1,26 @@
+{
+  "name": "hello",
+  "version": "1.0.0",
+  "description": "Lambda function that tests the lambda layers",
+  "main": "index.ts",
+  "scripts": {
+    "start": "serverless offline start"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.5",
+    "@types/pg": "^7.14.3",
+    "@types/moment": "^2.13.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "pg": "^8.0.0",
+    "serverless-http": "^2.3.2",
+    "serverless-offline": "^6.1.4",
+    "serverless-plugin-typescript": "^1.1.9",
+    "typescript": "^3.8.3",
+    "validator": "^13.0.0"
+  },
+  "dependencies": {}
+}
