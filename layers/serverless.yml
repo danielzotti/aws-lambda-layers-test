@@ -13,7 +13,7 @@ layers:
     compatibleRuntimes:
       - nodejs12.x
   logging:
-    path: logging
+    path: logging/dist
     description: Layer with a simple Logger
     compatibleRuntimes:
       - nodejs12.x

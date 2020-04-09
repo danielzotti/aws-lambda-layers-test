@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
-    "lib": ["ES2017"],
+    "lib": [
+      "ES2017"
+    ],
     "module": "commonjs",
     "esModuleInterop": true,
     "moduleResolution": "node",
@@ -8,9 +10,11 @@
     "removeComments": true,
     "preserveConstEnums": true,
     "sourceMap": true,
-    "outDir": "./nodejs/node_modules/logging/.",
+    "outDir": "dist/nodejs/node_modules/logging/.",
     "target": "ES2017",
     "declaration": true
   },
-  "include": ["./src/**/*.ts"]
+  "include": [
+    "./src/**/*.ts"
+  ]
 }
