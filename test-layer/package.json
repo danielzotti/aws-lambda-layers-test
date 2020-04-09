@@ -4,8 +4,8 @@
   "description": "Lambda function that tests the lambda layers",
   "main": "index.ts",
   "scripts": {
-    "deploy": "serverless deploy",
-    "start": "serverless offline start"
+    "deploy": "npm install && sls deploy",
+    "start": "sls offline start"
   },
   "author": "",
   "license": "ISC",

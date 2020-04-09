@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "It contains all Lambda Layers",
   "scripts": {
-    "build:logging": "cd ./logging/ && npm run build",
-    "build": "npm run build:logging",
-    "deploy": "npm run build && sls deploy"
-  },
-  "author": ""
+    "build:logging": "cd ./logging/ && npm install && npm run build",
+    "build:express-pg-moment": "cd ./express-pg-moment/nodejs && npm install",
+    "build:all": "npm run build:logging && npm run build:express-pg-moment",
+    "deploy": "npm run build:all && sls deploy"
+  }
 }
