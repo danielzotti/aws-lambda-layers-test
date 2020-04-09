@@ -1,0 +1,11 @@
+{
+  "name": "layers",
+  "version": "1.0.0",
+  "description": "It contains all Lambda Layers",
+  "scripts": {
+    "build:logging": "cd ./logging/ && npm run build",
+    "build": "npm run build:logging",
+    "deploy": "npm run build && sls deploy"
+  },
+  "author": ""
+}
