@@ -11,6 +11,7 @@ functions:
     handler: index.handler
     layers:
       - ${cf:layers-${self:provider.stage}.ExpressPgMomentLayerExport}
+      - ${cf:layers-${self:provider.stage}.LoggingLayerExport}
       # - {Ref: ExpressPgMomentLambdaLayer}
       # - arn:aws:lambda:eu-west-3:660349859862:layer:expressPgMoment:3
     events:
@@ -18,7 +19,9 @@ functions:
           path: /time
           method: GET
           cors: true
-
+package:
+  exclude:
+    - node_modules/logging
 plugins:
   - serverless-plugin-typescript
   - serverless-offline

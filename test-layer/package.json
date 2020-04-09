@@ -20,7 +20,8 @@
     "serverless-offline": "^6.1.4",
     "serverless-plugin-typescript": "^1.1.9",
     "typescript": "^3.8.3",
-    "validator": "^13.0.0"
+    "validator": "^13.0.0",
+    "logging": "file:../layers/logging/nodejs/node_modules/logging"
   },
   "dependencies": {}
 }
