@@ -17,6 +17,11 @@ layers:
     description: Layer with a simple Logger
     compatibleRuntimes:
       - nodejs12.x
+  dates:
+    path: dates/dist
+    description: Layer with a custom layer that has moment as dependency
+    compatibleRuntimes:
+      - nodejs12.x
 
 resources:
   Outputs:
@@ -30,3 +35,8 @@ resources:
         Ref: LoggingLambdaLayer
       Export:
         Name: LoggingLambdaLayer
+    DatesLayerExport:
+      Value:
+        Ref: DatesLambdaLayer
+      Export:
+        Name: DatesLambdaLayer

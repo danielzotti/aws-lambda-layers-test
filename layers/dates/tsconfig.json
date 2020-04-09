@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "ES2017"
+    ],
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "outDir": "dist/nodejs/node_modules/dates/.",
+    "target": "ES2017",
+    "declaration": true
+  },
+  "include": [
+    "./src/**/*.ts"
+  ]
+}

@@ -12,8 +12,7 @@ functions:
     layers:
       - ${cf:layers-${self:provider.stage}.ExpressPgMomentLayerExport}
       - ${cf:layers-${self:provider.stage}.LoggingLayerExport}
-      # - {Ref: ExpressPgMomentLambdaLayer}
-      # - arn:aws:lambda:eu-west-3:660349859862:layer:expressPgMoment:3
+      - ${cf:layers-${self:provider.stage}.DatesLayerExport}
     events:
       - http:
           path: /time
@@ -22,6 +21,7 @@ functions:
 package:
   exclude:
     - node_modules/logging
+    - node_modules/dates
 plugins:
   - serverless-plugin-typescript
   - serverless-offline

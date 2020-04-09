@@ -2,8 +2,9 @@ import * as serverless from 'serverless-http';
 import * as Express from 'express';
 import * as cors from 'cors';
 import * as bodyParser from 'body-parser';
-import moment = require('moment');
+// import moment = require('moment');
 import logging = require('logging');
+import { getTime } from "dates";
 
 const app: Express.Application = Express();
 
@@ -16,7 +17,8 @@ app.get(`/time`, async (req, res) => {
     try {
 
       const result = {
-        message: `Time is ${moment().format('HH:mm:ss')}. Have a nice day!`
+        // message: `Time is ${moment().format('HH:mm:ss')}. Have a nice day!`
+        message: `TIme is ${getTime()}. Have a nice day!`
       }
 
       res.send(result);
