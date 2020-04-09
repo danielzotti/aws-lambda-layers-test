@@ -118,3 +118,22 @@ layers:
     compatibleRuntimes:
       - nodejs12.x
 ```
+
+## Useful lectures:
+- [Integrating Lambda Layers into your Node.js Lambdas using pre-configured templates](https://blog.theodo.com/2019/01/lambda-layer-template/)
+- [NodeJS Runtime Environment with AWS Lambda Layers](https://medium.com/@anjanava.biswas/nodejs-runtime-environment-with-aws-lambda-layers-f3914613e20e)
+- [Lambda Layers & Node & require the layer code & sls invoke local](https://forum.serverless.com/t/lambda-layers-node-require-the-layer-code-sls-invoke-local/6673)
+- [How to deploy multiple micro-services under one API domain with Serverless](https://serverless.com/blog/api-gateway-multiple-services/)
+- [How to use multiple runtimes in a single serverless microservice](https://serverless.com/blog/building-mutliple-runtimes/)
+- [When to use Lambda Layers](https://lumigo.io/blog/lambda-layers-when-to-use-it/)
+- [Get Started With AWS, Serverless, and TypeScript](https://dev.to/michael_timbs/get-started-with-aws-serverless-and-typescript-5hgf)
+- [How I package TypeScript lambdas for AWS](https://coderbyheart.com/how-i-package-typescript-lambdas-for-aws/)
+- [Part 2 — Create Lambda Layers with Serverless Framework and Offline support](https://medium.com/appgambit/part-2-create-lambda-layers-with-serverless-framework-and-offline-support-ad2a5a8dabfb)
+- [StackOverflow: Can I import typescript types from a Lambda Layer?](https://stackoverflow.com/questions/57553131/can-i-import-typescript-types-from-a-lambda-layer)
+- [Lambda Layers — Tips & Tricks](https://medium.com/@manojf/lambda-layers-tips-tricks-3f1a4343a434)
+- [Sharing Code among Lambdas using Lambda Layers](https://thecloudtutorials.com/2020/02/08/sharing-code-among-lambdas-using-lambda-layers/)
+
+### Videos
+- [Sharing Code with Lambda Layers](https://www.youtube.com/watch?v=QDBg2vp6vKY)
+- [Lambda Layers - Tips & Tricks](https://www.youtube.com/watch?v=ChBDYWg2cOo)
+- [How to use Lambda Layers with TypeScript](https://www.youtube.com/watch?v=Q_UYchE-SKc)
