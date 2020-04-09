@@ -10,12 +10,12 @@ app.use(cors());
 
 app.use(bodyParser.json());
 
-app.get(`/test`, async (req, res) => {
+app.get(`/time`, async (req, res) => {
 
     try {
 
       const result = {
-        message: `Hello! Time is ${moment().format('HH:mm:ss')}`
+        message: `Time is ${moment().format('HH:mm:ss')}. Have a nice day!`
       }
 
       res.send(result);

@@ -10,16 +10,12 @@ functions:
   hello:
     handler: index.handler
     layers:
-      #      - arn:aws:lambda:eu-west-3:660349859862:layer:express-pg-moment:1
-      - ${cf:layers-${self:provider.stage}.ExpressPgMomentLambdaLayer}
+      - ${cf:layers-${self:provider.stage}.ExpressPgMomentLayerExport}
+      # - {Ref: ExpressPgMomentLambdaLayer}
+      # - arn:aws:lambda:eu-west-3:660349859862:layer:expressPgMoment:3
     events:
       - http:
-          path: /
-          method: GET
-          cors: true
-      #          private: true
-      - http:
-          path: /test
+          path: /time
           method: GET
           cors: true
 

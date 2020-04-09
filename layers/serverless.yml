@@ -4,13 +4,14 @@ provider:
   name: aws
   runtime: nodejs12.x
   region: eu-west-3
-  stage: dev
+  stage: ${opt:stage, 'dev'}
 
 layers:
-  express-pg-moment:
+  expressPgMoment:
     path: express-pg-moment
-    name: express-pg-moment
     description: Layer with ExpressJS, MomentJS, Serverless HTTP, PostgreSQL client
+    compatibleRuntimes:
+      - nodejs12.x
 
 resources:
   Outputs:
