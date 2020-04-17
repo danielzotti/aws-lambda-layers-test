@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "./node_modules/typescript/bin/tsc",
+    "compile": "tsc",
     "copy": "copyfiles -f ./src/package.json ./dist/nodejs/node_modules/logging",
     "build": "npm run compile && npm run copy"
   },

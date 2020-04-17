@@ -29,14 +29,14 @@ resources:
       Value:
         Ref: ExpressPgMomentLambdaLayer
       Export:
-        Name: ExpressPgMomentLambdaLayer
+        Name: ExpressPgMomentLambdaLayer-${self:provider.stage}
     LoggingLayerExport:
       Value:
         Ref: LoggingLambdaLayer
       Export:
-        Name: LoggingLambdaLayer
+        Name: LoggingLambdaLayer-${self:provider.stage}
     DatesLayerExport:
       Value:
         Ref: DatesLambdaLayer
       Export:
-        Name: DatesLambdaLayer
+        Name: DatesLambdaLayer-${self:provider.stage}

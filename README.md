@@ -1,5 +1,12 @@
 # AWS Lambda Layers Test
 A simple project to test AWS Lambda functions & Layers written in TypeScript
+
+## I just want to try it!
+Open a terminal and run these commands:
+- `cd layers` # enter the layers folder
+- `npm run build:all` # install all dependencies and transpile TypeScript code into JS
+- `cd ../test-layer` # enter the lambda function folder
+- `npm run first-start` # install dependencies and run the lambda function locally using serverless offline plugin
  
 ## Folder structure
 - `layers` the folder that contains all layers:
@@ -56,7 +63,7 @@ resources:
       Value:
         Ref: LoggingLambdaLayer
       Export:
-        Name: LoggingLambdaLayer
+        Name: LoggingLambdaLayer-${self:provider.stage}
 ```
 
 in lambda function `serverless.yml`:

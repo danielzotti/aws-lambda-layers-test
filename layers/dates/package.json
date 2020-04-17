@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "./node_modules/typescript/bin/tsc",
-    "copy": "copyfiles -f ./src/package.json ./dist/nodejs/node_modules/dates",
-    "build": "npm run compile && npm run copy"
+    "compile": "tsc",
+    "copy": "copyfiles -f ./src/package-lock.json ./src/package.json ./dist/nodejs/node_modules/dates",
+    "install-src-dependencies": "cd ./src && npm ci",
+    "install-dist-dependencies": "cd ./dist/nodejs/node_modules/dates && npm ci --only=prod",
+    "build": "npm run install-src-dependencies && npm ci && npm run compile && npm run copy && npm run install-dist-dependencies"
   },
   "author": "",
   "license": "ISC",

@@ -5,7 +5,8 @@
   "main": "index.ts",
   "scripts": {
     "deploy": "npm install && sls deploy",
-    "start": "sls offline start"
+    "start": "sls offline start",
+    "first-start": "npm install && npm run start"
   },
   "author": "",
   "license": "ISC",
