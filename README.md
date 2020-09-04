@@ -1,6 +1,10 @@
 # AWS Lambda Layers Test
 A simple project to test AWS Lambda functions & Layers written in TypeScript
 
+## Requirements
+- [Serverless framework](https://www.serverless.com)
+ - `npm install -g serverless`
+
 ## I just want to try it!
 Open a terminal and run these commands:
 - `cd layers` # enter the layers folder
