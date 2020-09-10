@@ -16,5 +16,8 @@
     "@types/node": "^13.11.1",
     "copyfiles": "^2.2.0",
     "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "layers": "file:.."
   }
 }
