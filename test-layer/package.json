@@ -22,7 +22,7 @@
     "serverless-offline": "^6.1.4",
     "serverless-plugin-typescript": "^1.1.9",
     "typescript": "^3.8.3",
-    "validator": "^13.0.0",
+    "validator": "^13.7.0",
     "logging": "file:../layers/logging/dist/nodejs/node_modules/logging",
     "dates": "file:../layers/dates/dist/nodejs/node_modules/dates"
   },
