@@ -15,7 +15,7 @@
     "@types/pg": "^7.14.3",
     "@types/moment": "^2.13.0",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "moment": "^2.24.0",
     "pg": "^8.0.0",
     "serverless-http": "^2.3.2",
