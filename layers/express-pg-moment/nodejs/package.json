@@ -4,7 +4,7 @@
   "description": "A lambda layer with Serverless HTTP, ExpressJS, pg (PostgreSQL) and MomentJS",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "moment": "^2.24.0",
     "pg": "^8.0.0",
     "serverless-http": "^2.3.2",
